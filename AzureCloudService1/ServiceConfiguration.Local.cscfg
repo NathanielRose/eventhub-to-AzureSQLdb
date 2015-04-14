@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="AzureCloudService1" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2014-06.2.4">
+  <Role name="WorkerRole1">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="SqlDatabaseConnectionString" value="[AZURE SQL DATABASE CONNECTION STRING]" />
+      <Setting name="StorageAccountConnectionString" value="[STORAGE ACCOUNT CONNECTION STRING]" />
+      <Setting name="ServiceBusConnectionString" value="[SERVICE BUS CONNECTION STRING]" />
+      <Setting name="EventHubName" value="[EVENT HUB NAME]" />
+      <Setting name="ConsumerGroupName" value="[CONSUMER GROUP NAME]" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="AzureCloudService1" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2014-06.2.4">
+  <Role name="WorkerRole1">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="SqlDatabaseConnectionString" value="Server=tcp:vh47syb1gp.database.windows.net,1433;Database=IoTnate;User ID=nmrose@vh47syb1gp;Password=115!Nate;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;" />
+      <Setting name="StorageAccountConnectionString" value="http;AccountName=iotspace;AccountKey=JvDBulZEWQ4ep9jOkZZgucti7OPBUQyh82iMWUNxBWURzT57AQtZ6HGBt+9dAGqfCjL1zMNnpfpffOp7qqDI9Q==" />
+      <Setting name="ServiceBusConnectionString" value="Endpoint=sb://iotnate.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=+XRBh06RRMu0/Ew/DSEtdOvOXm7fk9401S/AtmAMEAs=" />
+      <Setting name="EventHubName" value="ioteventh" />
+      <Setting name="ConsumerGroupName" value="trolls" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
